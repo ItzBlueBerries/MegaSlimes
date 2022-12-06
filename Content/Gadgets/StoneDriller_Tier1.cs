@@ -45,6 +45,11 @@ namespace MegaSlimes.Content
                 },
                 new Extractor.ProduceEntry()
                 {
+                    id = Stonums.PHOSPHORITE,
+                    weight = 90f
+                },
+                new Extractor.ProduceEntry()
+                {
                     restrictZone = true,
                     zone = ZoneDirector.Zone.MOSS,
                     id = Stonums.TABBINITE,
@@ -53,21 +58,14 @@ namespace MegaSlimes.Content
                 new Extractor.ProduceEntry()
                 {
                     restrictZone = true,
-                    zone = ZoneDirector.Zone.REEF,
-                    id = Stonums.PHOSPHORITE,
-                    weight = 60f
-                },
-                new Extractor.ProduceEntry()
-                {
-                    restrictZone = true,
-                    zone = ZoneDirector.Zone.REEF,
+                    zone = ZoneDirector.Zone.QUARRY,
                     id = Stonums.ROCKITE_B,
                     weight = 30f
                 },
                 new Extractor.ProduceEntry()
                 {
                     restrictZone = true,
-                    zone = ZoneDirector.Zone.REEF,
+                    zone = ZoneDirector.Zone.QUARRY,
                     id = Stonums.ROCKITE_A,
                     weight = 20f
                 }

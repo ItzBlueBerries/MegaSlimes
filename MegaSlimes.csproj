@@ -115,5 +115,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Assets\stone_ico\phosphorite_ico.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Abilities.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

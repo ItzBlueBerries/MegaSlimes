@@ -31,6 +31,14 @@ namespace MegaSlimes.Content
 
             mPinkObj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
+            Extractor component = SRSingleton<GameContext>.Instance.LookupDirector.GetGadgetDefinition(Gadget.Id.EXTRACTOR_PUMP_ABYSSAL).prefab.GetComponent<Extractor>();
+            GameObject boomPrefab = Prefab.GetPrefab(Identifiable.Id.BOOM_SLIME).GetComponentInChildren<ExplodeIndicatorMarker>(true).gameObject;
+
+            UnityEngine.Object.Instantiate(boomPrefab, mPinkObj.transform);
+            mPinkObj.AddComponent<MeteorSlimeMagnetism>();
+            mPinkObj.GetComponent<MeteorSlimeMagnetism>().lowGravFX = component.produces[5].spawnFX;
+            mPinkObj.GetComponent<MeteorSlimeMagnetism>().attractFX = component.produces[5].spawnFX;
+
             SlimeAppearance.SlimeBone[] attachedBones = new SlimeAppearance.SlimeBone[]
             {
                 SlimeAppearance.SlimeBone.JiggleBack,

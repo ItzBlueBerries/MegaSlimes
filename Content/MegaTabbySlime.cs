@@ -31,6 +31,9 @@ namespace MegaSlimes.Content
 
             mTabbyObj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
+            UnityEngine.Object.Destroy(mTabbyObj.GetComponent<FleeThreats>());
+            mTabbyObj.GetComponent<SlimeHealth>().maxHealth = 36;
+
             SlimeAppearance.SlimeBone[] attachedBones = new SlimeAppearance.SlimeBone[]
             {
                 SlimeAppearance.SlimeBone.JiggleBack,

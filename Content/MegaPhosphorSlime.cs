@@ -32,6 +32,8 @@ namespace MegaSlimes.Content
 
             mPhosObj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
+            UnityEngine.Object.Destroy(mPhosObj.GetComponent<DestroyOutsideHoursOfDay>());
+
             SlimeAppearance.SlimeBone[] attachedBones = new SlimeAppearance.SlimeBone[]
             {
                 SlimeAppearance.SlimeBone.JiggleBack,

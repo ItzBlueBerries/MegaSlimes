@@ -34,6 +34,9 @@ namespace MegaSlimes.Content
 
             mRockObjA.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
+            mRockObjA.GetComponent<DamagePlayerOnTouch>().damagePerTouch = 50;
+            mRockObjA.GetComponent<SlimeHealth>().maxHealth = 16;
+
             SlimeAppearance.SlimeBone[] attachedBones = new SlimeAppearance.SlimeBone[]
             {
                 SlimeAppearance.SlimeBone.JiggleBack,
@@ -72,6 +75,9 @@ namespace MegaSlimes.Content
             mRockDefB.CanLargofy = false;
 
             mRockObjB.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+            UnityEngine.Object.Destroy(mRockObjB.GetComponent<DamagePlayerOnTouch>());
+            mRockObjB.GetComponent<SlimeHealth>().maxHealth = 26;
 
             SlimeAppearance.SlimeBone[] attachedBones = new SlimeAppearance.SlimeBone[]
             {

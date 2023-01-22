@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using static ShortcutLib.Shortcut;
 
 namespace MegaSlimes
@@ -20,6 +21,11 @@ namespace MegaSlimes
             Tabbinite.PreRegisterTabbinite();
             Rockite.PreRegisterRockite();
             Phosphorite.PreRegisterPhosphorite();
+            Puddinite.PreRegisterPuddinite();
+            Boomite.PreRegisterBoomite();
+            Radinite.PreRegisterRadinite();
+            // Tarrite.PreRegisterTarrite();
+            Dervishite.PreRegisterDervishite();
         }
 
 
@@ -31,6 +37,11 @@ namespace MegaSlimes
             Tabbinite.RegisterTabbinite();
             Rockite.RegisterRockite();
             Phosphorite.RegisterPhosphorite();
+            Puddinite.RegisterPuddinite();
+            Boomite.RegisterBoomite();
+            Radinite.RegisterRadinite();
+            // Tarrite.RegisterTarrite();
+            Dervishite.RegisterDervishite();
 
             StoneDriller_Tier1.RegisterTier();
 
@@ -39,6 +50,12 @@ namespace MegaSlimes
             MegaRockSlime.RegisterMegaA();
             MegaRockSlime.RegisterMegaB();
             MegaPhosphorSlime.RegisterMega();
+            MegaPuddleSlime.RegisterMega();
+            MegaBoomSlime.RegisterMega();
+            MegaRadSlime.RegisterMegaA();
+            MegaRadSlime.RegisterMegaB();
+            // MegaTarrSlime.RegisterMega();
+            MegaDervishSlime.RegisterMega();
         }
 
         // Called after all mods Load's have been called

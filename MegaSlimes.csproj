@@ -71,13 +71,23 @@
   <ItemGroup>
     <Compile Include="Bundles\Bundles.cs" />
     <Compile Include="Content\Gadgets\StoneDriller_Tier1.cs" />
+    <Compile Include="Content\MegaDervishSlime.cs" />
     <Compile Include="Content\MegaPhosphorSlime.cs" />
+    <Compile Include="Content\MegaBoomSlime.cs" />
+    <None Include="Content\MegaTarrSlime.cs" />
+    <Compile Include="Content\MegaPuddleSlime.cs" />
     <Compile Include="Content\MegaPinkSlime.cs" />
+    <Compile Include="Content\MegaRadSlime.cs" />
     <Compile Include="Content\MegaRockSlime.cs" />
     <Compile Include="Content\MegaTabbySlime.cs" />
     <None Include="Content\Crates\MegaCrateReef.cs" />
     <Compile Include="Content\Stones\Phosphorite.cs" />
+    <Compile Include="Content\Stones\Boomite.cs" />
+    <None Include="Content\Stones\Tarrite.cs" />
+    <Compile Include="Content\Stones\Dervishite.cs" />
+    <Compile Include="Content\Stones\Radinite.cs" />
     <Compile Include="Content\Stones\Rockite.cs" />
+    <Compile Include="Content\Stones\Puddinite.cs" />
     <Compile Include="Content\Stones\Tabbinite.cs" />
     <Compile Include="Evonums.cs" />
     <Compile Include="Content\Stones\Pinkinite.cs" />
@@ -110,13 +120,22 @@
     <EmbeddedResource Include="Assets\stone_tex\phosphorite_tex.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\tex\mega_crate_tex.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Assets\stone_ico\phosphorite_ico.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Abilities.txt" />
+    <EmbeddedResource Include="Assets\stone_ico\dervishite_ico.png" />
+    <EmbeddedResource Include="Assets\stone_tex\dervishite_tex.png" />
+    <None Include="Assets\stone_ico\tarrite_ico.png" />
+    <None Include="Assets\stone_tex\tarrite_tex.png" />
+    <EmbeddedResource Include="Assets\stone_ico\boomite_ico.png" />
+    <EmbeddedResource Include="Assets\stone_ico\radinite_a_ico.png" />
+    <EmbeddedResource Include="Assets\stone_ico\radinite_b_ico.png" />
+    <EmbeddedResource Include="Assets\stone_tex\boomite_tex.png" />
+    <EmbeddedResource Include="Assets\stone_tex\radinite_a_tex.png" />
+    <EmbeddedResource Include="Assets\stone_tex\radinite_b_tex.png" />
+    <EmbeddedResource Include="Assets\stone_ico\puddinite_ico.png" />
+    <EmbeddedResource Include="Assets\stone_tex\puddinite_tex.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

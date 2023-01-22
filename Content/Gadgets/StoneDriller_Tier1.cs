@@ -21,23 +21,24 @@ namespace MegaSlimes.Content
             {
                 new GadgetDefinition.CraftCost()
                 {
-                    id = Identifiable.Id.INDIGONIUM_CRAFT,
+                    id = Identifiable.Id.SLIME_FOSSIL_CRAFT,
+                    amount = 100
+                },
+                new GadgetDefinition.CraftCost()
+                {
+                    id = Identifiable.Id.SPIRAL_STEAM_CRAFT,
                     amount = 80
                 },
                 new GadgetDefinition.CraftCost()
                 {
-                    id = Identifiable.Id.SLIME_FOSSIL_CRAFT,
+                    id = Identifiable.Id.INDIGONIUM_CRAFT,
                     amount = 50
                 },
-                new GadgetDefinition.CraftCost()
-                {
-                    id = Identifiable.Id.STRANGE_DIAMOND_CRAFT,
-                    amount = 20
-                }
             };
 
             produceEntries = new Extractor.ProduceEntry[]
             {
+                #region EVERYWHERE
                 new Extractor.ProduceEntry()
                 {
                     id = Stonums.PINKINITE,
@@ -50,11 +51,39 @@ namespace MegaSlimes.Content
                 },
                 new Extractor.ProduceEntry()
                 {
+                    id = Stonums.PUDDINITE,
+                    weight = 60f
+                },
+                #endregion
+
+                #region MOSS
+                new Extractor.ProduceEntry()
+                {
                     restrictZone = true,
                     zone = ZoneDirector.Zone.MOSS,
                     id = Stonums.TABBINITE,
                     weight = 60f
                 },
+                new Extractor.ProduceEntry()
+                {
+                    restrictZone = true,
+                    zone = ZoneDirector.Zone.MOSS,
+                    id = Stonums.BOOMITE,
+                    weight = 60f
+                },
+                #endregion
+
+                #region DESERT
+                new Extractor.ProduceEntry()
+                {
+                    restrictZone = true,
+                    zone = ZoneDirector.Zone.DESERT,
+                    id = Stonums.DERVISHITE,
+                    weight = 60f
+                },
+                #endregion
+
+                #region QUARRY
                 new Extractor.ProduceEntry()
                 {
                     restrictZone = true,
@@ -66,9 +95,24 @@ namespace MegaSlimes.Content
                 {
                     restrictZone = true,
                     zone = ZoneDirector.Zone.QUARRY,
+                    id = Stonums.RADINITE_A,
+                    weight = 30f
+                },
+                new Extractor.ProduceEntry()
+                {
+                    restrictZone = true,
+                    zone = ZoneDirector.Zone.QUARRY,
                     id = Stonums.ROCKITE_A,
                     weight = 20f
-                }
+                },
+                new Extractor.ProduceEntry()
+                {
+                    restrictZone = true,
+                    zone = ZoneDirector.Zone.QUARRY,
+                    id = Stonums.RADINITE_B,
+                    weight = 20f
+                },
+                #endregion
             };
 
             Color32[] mainColors = new Color32[]

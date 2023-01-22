@@ -3,8 +3,15 @@
 All Mega Slimes can produce 3 plorts per production & 5 plorts per favorite production.
 The base HP / Health is 20.
 
+Keep in mind, some may just be an appearance change with little to no additional abilities.
+
 1 : Mega Pink Slime - Meteor Magnetism. (Attracts objects / Slimes around it)
 2 : Mega Tabby Slime - No fear for Tarr's, Increased HP / Health. (36 Health Total)
 3 : Mega Rock Slime A - Does 50 damage when touched, Decreased HP / Heath. (16 Health Total)
-4 : Mega Rock Slime B - No longer does damage when touched, Increased HP / Health. (26 Heath Total);
+4 : Mega Rock Slime B - No longer does damage when touched, Increased HP / Health. (26 Heath Total)
 5 : Mega Phosphor Slime - No longer disappears during Daytime.
+6 : Mega Puddle Slime - Can survive on land.
+7 : Mega Boom Slime - Increased HP / Health. (23 Health Total)
+8 : Mega Rad Slime A - Decreased HP / Health. (18 Health Total)
+9 : Mega Rad Slime B - Increased HP / Health. (38 Health Total)
+10 : Mega Dervish Slime - Increased HP / Health. (25 Health Total)

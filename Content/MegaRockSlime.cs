@@ -58,6 +58,8 @@ namespace MegaSlimes.Content
 
             mRockAppA.Structures[1].DefaultMaterials[0] = Slime.GetSlimeDef(Identifiable.Id.ROCK_SLIME).GetSlimeMat(1);
             mRockAppA.Structures[2].DefaultMaterials[0] = Slime.GetSlimeDef(Identifiable.Id.ROCK_SLIME).GetSlimeMat(1);
+
+            EatMap.CreateBecomeMap(Identifiable.Id.ROCK_SLIME, Evonums.MEGA_ROCK_SLIME_A, Stonums.ROCKITE_A, slimeDriver: SlimeEmotions.Emotion.NONE);
         }
 
         public static void RegisterMegaB()
@@ -100,7 +102,6 @@ namespace MegaSlimes.Content
             mRockAppB.Structures[1].DefaultMaterials[0] = Slime.GetSlimeDef(Identifiable.Id.ROCK_SLIME).GetSlimeMat(1);
             mRockAppB.Structures[2].DefaultMaterials[0] = Slime.GetSlimeDef(Identifiable.Id.ROCK_SLIME).GetSlimeMat(1);
 
-            EatMap.CreateBecomeMap(Identifiable.Id.ROCK_SLIME, Evonums.MEGA_ROCK_SLIME_A, Stonums.ROCKITE_A, slimeDriver: SlimeEmotions.Emotion.NONE);
             EatMap.CreateBecomeMap(Identifiable.Id.ROCK_SLIME, Evonums.MEGA_ROCK_SLIME_B, Stonums.ROCKITE_B, slimeDriver: SlimeEmotions.Emotion.NONE);
         }
     }
